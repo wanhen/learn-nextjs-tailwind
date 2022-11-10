@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SidemenuMobile()
 {
     
@@ -7,11 +8,11 @@ export default function Sidemenu() {
         <>
             <div className="flex h-screen flex-col justify-between border-r bg-white">
                 <div className="px-4 py-6">
-                    <span className="block h-10 w-32 rounded-lg bg-gray-200"></span>
+                    <span className="block h-10 w-100 rounded-lg bg-gray-200 text-center p-2">Welcome</span>
 
                     <nav aria-label="Main Nav" className="mt-6 flex flex-col space-y-1">
-                        <a
-                            href="#"
+                        <Link
+                            href="/auth/login"
                             className="flex items-center rounded-lg bg-gray-100 px-4 py-2 text-gray-700"
                         >
                             <svg
@@ -35,7 +36,7 @@ export default function Sidemenu() {
                             </svg>
 
                             <span className="ml-3 text-sm font-medium"> General </span>
-                        </a>
+                        </Link>
 
                         <details className="group">
                             <summary
